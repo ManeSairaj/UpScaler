@@ -1,7 +1,7 @@
 import React from "react";
 
-const Layout = ({ childern }: { childern: React.ReactNode }) => {
-  return <main className="auth">{childern}</main>;
+const Layout = ({ children }: { children: React.ReactNode }) => {
+  return <main className="auth">{children}</main>;
 };
 
 export default Layout;
