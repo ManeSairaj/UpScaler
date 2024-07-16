@@ -14,7 +14,7 @@ const Home = () => {
 
 export default Home;
 
-export function Widget() {
+function Widget() {
   return (
     <>
       <div className="flex items-center justify-center h-screen">
