@@ -22,7 +22,7 @@ function Widget() {
 
         <div className="spinner2 mr-8"></div>
 
-        <div className="spinner3"></div>
+        <div className="spinner1"></div>
       </div>
     </>
   );

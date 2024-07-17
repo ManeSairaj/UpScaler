@@ -14,13 +14,20 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <div className="flex size-full flex-col gap-6">
-        <Link href={"/"} className="sidebar-logo">
-          <Image
+        <Link href={"/"} className="sidebar-logo w-full">
+          {/* <Image
             src={"/assets/images/logo-text.svg"}
             alt="logo"
             width={180}
             height={28}
+          /> */}
+          <Image
+            src={"/assets/images/icon.png"}
+            alt="logo"
+            width={48}
+            height={48}
           />
+          <b className="text-[#573aff] text-2xl uppercase tracking-wider">UpScaler</b>
         </Link>
 
         <nav className="sidebar-nav">

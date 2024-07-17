@@ -21,13 +21,29 @@ const MobileNav = () => {
 
   return (
     <header className="header">
-      <Link href="/">
-        <Image
+      <Link href="/" className="flex items-center gap-2 md:py-2">
+        {/* <Image
           src={"/assets/images/logo-text.svg"}
           height={28}
           width={180}
           alt="logo"
+        /> */}
+        <Image
+          src={"/assets/images/icon.png"}
+          alt="logo"
+          width={48}
+          height={48}
         />
+        <b
+          className="text-[#573aff] text-2xl uppercase tracking-wider"
+          style={{
+            fontFamily: "Oswald",
+            fontWeight: "500",
+            fontStyle: "normal",
+          }}
+        >
+          UpScaler
+        </b>
       </Link>
 
       <nav className="flex gap-2">
@@ -44,7 +60,10 @@ const MobileNav = () => {
                 className="cursor-pointer"
               />
             </SheetTrigger>
-            <SheetContent className="sheet-content md:w-72 h-full overflow-x-auto" side={"bottom"}>
+            <SheetContent
+              className="sheet-content md:w-72 h-full overflow-x-auto"
+              side={"bottom"}
+            >
               <>
                 <Image
                   src={"/assets/images/logo-text.svg"}
@@ -63,7 +82,10 @@ const MobileNav = () => {
                           isActive && "gradient-text"
                         } p-18 flex whitespace-nowrap text-dark-700`}
                       >
-                        <Link className="sidebar-link cursor-pointer" href={link.route}>
+                        <Link
+                          className="sidebar-link cursor-pointer"
+                          href={link.route}
+                        >
                           <Image
                             src={link.icon}
                             alt="logo"
@@ -82,10 +104,10 @@ const MobileNav = () => {
         </SignedIn>
 
         <SignedOut>
-            <Button asChild className="button bg-purple-gradient bg-cover">
-              <Link href={"/sign-in"}>Login</Link>
-            </Button>
-          </SignedOut>
+          <Button asChild className="button bg-purple-gradient bg-cover">
+            <Link href={"/sign-in"}>Login</Link>
+          </Button>
+        </SignedOut>
       </nav>
 
       {/* <Sheet>
