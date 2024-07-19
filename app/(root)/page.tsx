@@ -1,8 +1,13 @@
+"use client";
 import { UserButton } from "@clerk/nextjs";
-import React from "react";
+import React, { useEffect } from "react";
 import "../globals.css";
+import { usePathname } from "next/navigation";
 
 const Home = () => {
+  const pathname = usePathname();
+  console.log(pathname);
+
   return (
     <div>
       <p>Home</p>

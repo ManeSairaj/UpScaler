@@ -1,7 +1,18 @@
+"use client"
+
 import { SignUp } from "@clerk/nextjs";
+import { usePathname } from "next/navigation";
 
 export default function Page() {
-  // console.log(1);
+  console.log("sign-up");
 
-  return <SignUp />;
+  const pathname = usePathname();
+  console.log(pathname);
+  
+
+  return (
+    <div className="">
+      <SignUp />
+    </div>
+  );
 }
